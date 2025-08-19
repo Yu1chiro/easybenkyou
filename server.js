@@ -19,6 +19,9 @@ let currentQuizData = null;
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+app.get('/icon', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', '/icon.png'));
+});
 
 app.get('/study', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'study.html'));
